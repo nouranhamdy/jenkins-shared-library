@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-def call(String username, String password){
+def call(java.lang.String username, java.lang.String password){
     sh """
         docker build  -t nodeapp:v1 .
         docker login -u $username -p $password
